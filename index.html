@@ -4,10 +4,97 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>HooBank</title>
+    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="./css/main.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        "bg-color": '#010510'
+                    },
+                    screens: {
+                        sm: '640px',
+                        md: '768px',
+                        lg: '1024px',
+                        xl: '1210px',
+                        '2xl': '1210px'
+                    },
+                    container: {
+                        padding: {
+                            sm: '20px',
+                            lg: '20px',
+                            xl: '20px',
+                            '2xl': '20px',
+                        },
+                    },
+                }
+            }
+        }
+    </script>
 </head>
-<body>
+
+
+<body class="bg-bg-color">
+    <header class="site-header pt-8 ">
+        <div class="container">
+            
+            <div class="site-header__wrapper flex justify-between items-center">
+                <a href="./index.html">
+                    <img src="./images/icons/site-logo.svg"
+                    width="118"
+                    height="32"
+                    alt="HooBank's logo">
+                </a>
+                
+                <nav class="site-header__nav">
+                    <ul class="site-header__list flex text-white">
+                        <li class="site-header__item">
+                            <a class="site-header__link" href="#">Home</a>
+                        </li>
+                        <li class="site-header__item">
+                            <a class="site-header__link" href="#">About Us</a>
+                        </li>
+                        <li class="site-header__item">
+                            <a class="site-header__link" href="#">Features</a>
+                        </li>
+                        <li class="site-header__item">
+                            <a class="site-header__link" href="#">Solution</a>
+                        </li>
+                    </ul>
+                </nav>
+                
+                <button class="site-header__button" type="button"></button>
+            </div>
+        </div>
+    </header>
     
+    <main class="site-main">
+        <section class="hero">
+            <div class="container">
+                <div class="hero__wrapper">
+                    <div class="hero__sub-wrapper relative inline-block before:absolute before:w-8 before:h-8 mb-3">
+                        <p class="text-lg"><span class="text-white opacity-100">20%</span> DISCOUNT FOR <span class="text-white opacity-100">1 MONTH</span> ACCOUNT</p>
+                    </div>
+                    <h1 class="hero__heading text-white font-semibold text-7xl">
+                        The Next <br> <span class="hero__heading-span font-semibold text-7xl">Generation</span> <br>   
+                        Payment Method.
+                    </h1>
+                    
+                    <div class="hero__description-wrapper mt-10">
+                        <p class="hero__description text-lg text-white opacity-60 ">
+                            Our team of experts uses a methodology to identify the credit cards most likely to fit your needs. 
+                            We examine annual percentage rates, annual fees.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <footer class="site-footer"></footer>
+    
+    <script src="./js/main.js"></script>
 </body>
 </html>
