@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: [],
+  content: ["./src/**/*.{html,js}"],
   theme: {
     extend: {
       container: {
@@ -20,6 +20,11 @@ module.exports = {
         colors: {
           "bg-color": '#010510'
         },
+        lineHeight: {
+          '12': '3rem',
+          '89' : '89px',
+          '160%' : '160%'
+      },
       },
     },
   },
