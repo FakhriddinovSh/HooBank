@@ -1,7 +1,13 @@
 @media screen and (min-width: 907px){
     .handle__title{
-        line-height: 76px;
+        line-height: 76px!important;
     }
+}
+
+.handle-two{
+    background-image: url("../../images/hero-bg-2.png");
+    background-repeat: no-repeat;
+    background-position: calc(50% - 500px) calc(50% + 90px);
 }
 
 .handle__button{

@@ -1,9 +1,9 @@
 .hero{
     padding-top: 187px;
     padding-bottom: 180px;
-    background-image: url("../../images/hero-bg.png");
+    background-image: url("../../images/hero-bg-2.png"), url("../../images/hero-bg.png");
     background-repeat: no-repeat;
-    background-position: calc(50% + 697px) -680px;
+    background-position: left, calc(50% + 697px) -680px;
 }
 
 .hero__sub-wrapper{
@@ -29,6 +29,7 @@
 .hero__heading{
     margin-top: 0;
     letter-spacing: 0.01em;
+    line-height: 100px!important;
 }
 
 .hero__wrapper{
@@ -38,8 +39,8 @@
         background-repeat: no-repeat;
         width: 140px;
         height: 140px;
-        top: 60px;
-        left: 490px;
+        top: 70px;
+        left: 470px;
     }
 }
 
@@ -50,22 +51,20 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
-    text-fill-color: transparent;
 }
 
 .hero__description-wrapper{
     width: 100%;
     max-width: 483px;
-    
 }
 
 .hero__description{
-    line-height: 170%;
+    line-height: 170%!important;
 }
 
 @media screen and (max-width: 1024px){
     .hero{
-        background-position: calc(50% + 550px) -680px;
+        background-position: left, calc(50% + 550px) -680px;
     }
     .hero__wrapper{
         &::after{
@@ -86,7 +85,7 @@
 
 @media screen and (max-width: 560px){
     .hero{
-        background-position: calc(50% + 450px) -680px;
+        background-position: left, calc(50% + 450px) -680px;
     }
     .hero__wrapper{
         &::after{
